@@ -11,9 +11,9 @@ spring:
     name: kafkamanager
   datasource:
     kafka-manager:
-      jdbc-url: jdbc:mysql://localhost:3306/kafka_manager?characterEncoding=UTF-8&serverTimezone=GMT%2B8
-      username: admin
-      password: admin
+      jdbc-url: jdbc:mysql://10.241.122.111:3306/kafka_manager?characterEncoding=UTF-8&serverTimezone=GMT%2B8
+      username: wangyanjing
+      password: Abc123!@#
       driver-class-name: org.mariadb.jdbc.Driver
   main:
     allow-bean-definition-overriding: true

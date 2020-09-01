@@ -12,7 +12,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @date 2019-04-24
  */
 @SpringBootApplication
-
 @ComponentScan({"com.xiaojukeji.kafka.manager"})
 @EnableScheduling
 @EnableAutoConfiguration
