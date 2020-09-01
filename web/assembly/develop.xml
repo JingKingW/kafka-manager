@@ -1,0 +1,42 @@
+<assembly>
+    <id>develop</id>
+    <includeBaseDirectory>true</includeBaseDirectory>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+
+    <files>
+        <file>
+            <source>assembly/jvm.properties.dev</source>
+            <outputDirectory>config</outputDirectory>
+            <destName>jvm.properties</destName>
+            <fileMode>755</fileMode>
+            <lineEnding>unix</lineEnding>
+        </file>
+    </files>
+
+    <fileSets>
+        <fileSet>
+            <directory>assembly/bin</directory>
+            <outputDirectory>bin</outputDirectory>
+            <fileMode>0755</fileMode>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <outputDirectory>config</outputDirectory>
+            <includes>
+                <include>*.properties</include>
+                <include>*.xml</include>
+                <include>*.yml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>target</directory>
+            <outputDirectory>./</outputDirectory>
+            <fileMode>755</fileMode>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>
