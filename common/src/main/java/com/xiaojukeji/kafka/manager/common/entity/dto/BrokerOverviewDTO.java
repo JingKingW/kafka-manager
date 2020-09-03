@@ -1,8 +1,8 @@
 package com.xiaojukeji.kafka.manager.common.entity.dto;
 
+import com.xiaojukeji.kafka.manager.common.entity.bizenum.DBStatusEnum;
 import com.xiaojukeji.kafka.manager.common.entity.metrics.BrokerMetrics;
 import com.xiaojukeji.kafka.manager.common.entity.zookeeper.BrokerMetadata;
-import com.xiaojukeji.kafka.manager.common.entity.bizenum.DBStatusEnum;
 
 /**
  * @author zengqiao_cn@163.com

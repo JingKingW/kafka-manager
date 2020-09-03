@@ -4,13 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * kafka集群的mbean的object name集合
+ * kafka集群的mbean的object name集合 broker监控参数
  * @author tukun, zengqiao
  * @date 2015/11/5.
  */
 public class MbeanNameUtil {
 
-    //broker监控参数
     private static final String MESSAGE_IN_PER_SEC = "kafka.server:type=BrokerTopicMetrics,name=MessagesInPerSec";
     private static final String BYTES_IN_PER_SEC = "kafka.server:type=BrokerTopicMetrics,name=BytesInPerSec";
     private static final String BYTES_OUT_PER_SEC = "kafka.server:type=BrokerTopicMetrics,name=BytesOutPerSec";
@@ -40,7 +39,9 @@ public class MbeanNameUtil {
 //    private static final String FETCH_REQUEST_TIME = "kafka.network:type=TopicRequestMetrics,name=TotalTimeMs,request=FetchConsumer";
 
 
-    //存储监控的参数name到获取的object_name的映射关系图
+    /**
+     * 存储监控的参数name到获取的object_name的映射关系图
+     */
     private static Map<String, Mbean> mbeanNameMap = new HashMap<String, Mbean>();
     static {
         //监控参数配置，object_name和监控的属性名

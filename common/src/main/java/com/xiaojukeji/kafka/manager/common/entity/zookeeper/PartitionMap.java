@@ -6,6 +6,7 @@ import java.util.Map;
 
 /**
  * 根据/brokers/topics/topic的节点内容定义
+ *
  * @author tukun
  * @date 2015/11/10.
  */
@@ -14,7 +15,7 @@ public class PartitionMap implements Serializable {
     /**
      * 版本号
      */
-    private int                         version;
+    private int version;
 
     /**
      * Map<PartitionId，副本所在的brokerId列表>

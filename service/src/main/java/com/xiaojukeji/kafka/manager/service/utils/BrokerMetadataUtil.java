@@ -10,6 +10,7 @@ import java.util.List;
 
 /**
  * Created by limeng on 2017/10/24
+ * @author limeng
  */
 public class BrokerMetadataUtil {
 

@@ -1,5 +1,9 @@
 package com.xiaojukeji.kafka.manager.common.entity.bizenum;
 
+/**
+ * @author wangyj03
+ */
+
 public enum OrderStatusEnum {
     WAIT_DEAL(0, "待处理"),
 

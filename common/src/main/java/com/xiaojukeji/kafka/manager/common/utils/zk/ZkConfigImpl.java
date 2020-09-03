@@ -1,8 +1,8 @@
 package com.xiaojukeji.kafka.manager.common.utils.zk;
 
 import com.alibaba.fastjson.JSON;
-import com.xiaojukeji.kafka.manager.common.exception.ConfigException;
 import com.google.common.base.Preconditions;
+import com.xiaojukeji.kafka.manager.common.exception.ConfigException;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.cache.*;
@@ -23,7 +23,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**

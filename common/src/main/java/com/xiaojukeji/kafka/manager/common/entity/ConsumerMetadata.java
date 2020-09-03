@@ -2,7 +2,10 @@ package com.xiaojukeji.kafka.manager.common.entity;
 
 import kafka.admin.AdminClient;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author zengqiao
