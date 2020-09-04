@@ -1,5 +1,6 @@
 package com.xiaojukeji.kafka.manager.web.config;
 
+import com.xiaojukeji.kafka.manager.web.inteceptor.LoginInterceptor;
 import com.xiaojukeji.kafka.manager.web.inteceptor.PermissionInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringBootConfiguration;
@@ -20,6 +21,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebMvcConfig implements WebMvcConfigurer {
     @Autowired
     private PermissionInterceptor permissionInterceptor;
+    @Autowired
+    private LoginInterceptor loginInterceptor;
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
@@ -36,6 +39,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(permissionInterceptor).addPathPatterns("/api/v1/**");
+        registry.addInterceptor(loginInterceptor).addPathPatterns("/**");
     }
 
     @Override

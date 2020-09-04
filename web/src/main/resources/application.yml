@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 9100
   tomcat:
     accept-count: 100
     max-connections: 1000
@@ -30,3 +30,9 @@ kafka-monitor:
   notify-kafka:
     cluster-id: 95
     topic-name: kmo_monitor
+
+cas:
+  server-url-prefix: http://localhost:8080/cas
+  server-login-url: http://localhost:8080/cas/login
+  client-host-url: http://localhost:9100
+  validation-type: cas
