@@ -20,6 +20,18 @@ spring:
 
   profiles:
     active: dev
+  cas:
+    assertion-filters: /*
+    auth-filters: /*
+    validate-filters: /*
+    request-wrapper-filters: /*
+    sign-out-filters: /*
+    ignore-filters: /test
+    cas-server-login-url: http://localhost:8080/cas/login
+    cas-server-url-prefix: http://localhost:8080/cas/
+    server-name: http://localhost:9100
+    redirect-after-validation: true
+    use-session: true
 
 logging:
   config: classpath:logback-spring.xml
@@ -31,8 +43,5 @@ kafka-monitor:
     cluster-id: 95
     topic-name: kmo_monitor
 
-cas:
-  server-url-prefix: http://localhost:8080/cas
-  server-login-url: http://localhost:8080/cas/login
-  client-host-url: http://localhost:9100
-  validation-type: cas
+
+

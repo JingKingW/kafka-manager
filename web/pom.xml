@@ -60,11 +60,11 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
-        <!-- CAS依赖包 -->
+        <!--CAS Client-->
         <dependency>
-            <groupId>net.unicon.cas</groupId>
-            <artifactId>cas-client-autoconfig-support</artifactId>
-            <version>1.5.0-GA</version>
+            <groupId>org.jasig.cas.client</groupId>
+            <artifactId>cas-client-core</artifactId>
+            <version>3.5.1</version>
         </dependency>
         <!-- swagger -->
         <dependency>

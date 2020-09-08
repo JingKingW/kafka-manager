@@ -38,7 +38,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(permissionInterceptor).addPathPatterns("/api/v1/**");
+        //registry.addInterceptor(permissionInterceptor).addPathPatterns("/api/v1/**");
         registry.addInterceptor(loginInterceptor).addPathPatterns("/**");
     }
 
@@ -49,6 +49,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
 
         // FE
-        registry.addResourceHandler("index.html", "/**").addResourceLocations("classpath:/templates/","classpath:/static/");
+        registry.addResourceHandler("index.html", "/**").addResourceLocations("classpath:/templates/", "classpath:/static/");
     }
+
 }
